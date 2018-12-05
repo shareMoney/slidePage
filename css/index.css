@@ -1,0 +1,48 @@
+html,body{
+    height: 100%;
+    font-size: .24rem;
+    margin: 0;
+    position: 0;
+}
+/*flex样式*/
+.flex-align-center{/*垂直居中*/
+    display: flex;
+    align-items: center;
+}
+/*页面效果*/
+.slide-header{
+    position: fixed;
+    top: 0;
+    height: .8rem;
+    width: 100%;
+    background-color: #ffffff;
+}
+.slide-header .slide-backgroundBlack{
+    height: 100%;
+    overflow-x:auto;
+    white-space: nowrap;
+    box-shadow: 0px 2px 10px #eee;
+}
+.slide-header .slide-backgroundBlack>div{
+    margin: 0 .4rem;
+    text-align: center;
+    display: inline-block;
+    line-height: .8rem;
+}
+.slide-content{
+    margin-top: .8rem;
+    height: 100%;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.slide-pageContent{
+    height: 100%;
+}
+.slide-content .slide-page{
+    height: 100%;
+    float: left;
+}
+.slide-header .active{
+    color: red;
+}

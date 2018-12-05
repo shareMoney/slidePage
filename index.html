@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>页面活动</title>
+    <link href="css/index.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <div class="slide-header">
+        <div class="slide-backgroundBlack">
+            <div class="slide-header-title active flex-align-center">推荐</div>
+            <div class="slide-header-title flex-align-center">此刻</div>
+            <div class="slide-header-title flex-align-center">体验</div>
+        </div>
+    </div>
+    <div class="slide-content">
+        <div class="slide-pageContent">
+            <div class="slide-page" style="background-color: blue"></div>
+            <div class="slide-page" style="background-color: yellow"></div>
+            <div class="slide-page" style="background-color: red"></div>
+        </div>
+    </div>
+</body>
+<script>
+    //屏幕适配自适应
+    var deviceWidth = document.documentElement.clientWidth;
+    if (deviceWidth > 640) deviceWidth = 640;
+    document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+</script>
+</html>
